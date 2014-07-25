@@ -21,7 +21,9 @@ The output library's name has `_d` attached if it is a debug build, and `32` or 
 ## Other Changes, Gotchas ##
 
  * `glu.h` was renamed to `glutess.h` in order to be unambiguous in case you have a `glu.h` already in your include search path.
+ 
  * Superficial code changes were made to `tessellate.c` in order to provide Visual C compatibility.
+ 
   * `glutess.h` contains all of the glu functions, including ones that were pruned out.  If you call one, it is a link error.  `gluErrorString` may be one of these.  If you go to the trouble of adding it back in, send a patch!
 
 Michael Labbe
